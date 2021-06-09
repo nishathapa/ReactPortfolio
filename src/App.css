@@ -1,38 +1,215 @@
-.App {
+ /* Cornflower: #2F435A
+ DarkBrown: #AB6B51
+ Brown: #D0B49F
+ BlueGreeen: #39918C */
+
+:root {
+  --color-1: #2F435A;
+  --color-2: #AB6B51;
+  --color-3: #D0B49F;
+  --color-4: #39918C;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.header {
+  width: 100%;
+  height: 100vh;
+  background: url("./assets/nishathapa(1).png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+}
+
+.navbar {
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  background-color: #1d3c54;
+  top: 0;
+}
+
+.navbar_content {
+  display: flex;
+  height: inherit;
+  list-style: none;
+  float: right;
+  align-items: center;
+}
+
+.navbar_content li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  font-size: 18px;
+  padding: 0 20px;
+}
+.container{
+  width: 1200px;
+  margin: 0 auto;
+  height: inherit;
+}
+
+/*Grid system*/
+.row {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-4 {
+  width: 33.3333%;
+}
+
+/* Header */
+.header_content{
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  align-items: center;
+  color: #fff;
+}
+
+.header_ul {
+  list-style: none;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.header_ul li {
+  width: 50px;
+  height: 50px;
+  border: 2px solid var(--color-2);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10px;
+  font-size: 20px;
+}
+
+.header_ul li:first-child{
+  margin-left: 0;
+}
+
+.header_section h1 {
+  font-size: 57px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.header_section p {
+  font-size: 26px;
+  font-weight: 300;
+  line-height: 40px;
+  margin-bottom: 50px ;
+}
+
+/* Services */
+.services {
+  background: #1d3c54 ;
+  padding: 100px 0;
+  color: #fff;
+
+}
+
+.common {
+  width: 61.33333%;
+  margin: 0 auto;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.heading{
+  margin-bottom: 20px;
+  font-weight: 500;
+  color: var(--color-2);
+  font-size: 16px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.main_header{
+  font-size: 32px;
+  margin-bottom: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.main_content {
+  font-size: 16px;
+  color: var(--color-3);
 }
 
-.App-link {
-  color: #61dafb;
+.commonBorder{
+  height: 3px;
+  width: 70px;
+  background: var(--color-2);
+  margin: 40px auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.services_box{
+  padding: 37px;
+  background: var(--color-1);
+  margin: 20px;
+}
+
+.common_icon{
+  font-size: 40px;
+  color: var(--color-2);
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.service_box-header{
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.service_box-p {
+  font-size: 16px;
+  color: var(--color-3);
+}
+
+.about{
+  background: #1d3c54 ;
+  padding: 100px 0;
+  color: #fff;
+}
+
+.about-info{
+  width: 60%;
+}
+
+.about-info p {
+  margin: 21px 0;
+  font-size: 14px;
+}
+
+.container h1{
+  margin: 30px 0;
+}
+
+.contact-info{
+  width: 60%;  
+}
+.info{
+  margin: 14px 0;
+}
+
+.info strong{
+  color: var(--color-2)
+}
+
+.info p{
+  color: var(--color-3);
+  margin-top: 5px;
 }
