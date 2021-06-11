@@ -213,3 +213,9 @@ body {
   color: var(--color-3);
   margin-top: 5px;
 }
+
+.contact {
+  background: #1d3c54 ;
+  padding: 100px 0;
+  color: #fff;
+}
