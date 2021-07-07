@@ -36,12 +36,28 @@ body {
   top: 0;
 }
 
+.my_logo {
+  height: inherit;
+  width: 72px;
+  border-radius: 8px;
+}
+
+.logo_nav{
+  display: flex;
+  align-items: center;
+}
+
 .navbar_content {
   display: flex;
   height: inherit;
   list-style: none;
   float: right;
   align-items: center;
+}
+
+.nav-div{
+  display: flex;
+  justify-content: space-between;
 }
 
 .navbar_content li a {
@@ -55,6 +71,18 @@ body {
   width: 1200px;
   margin: 0 auto;
   height: inherit;
+  /* display: flex;
+  justify-content: space-between; */
+}
+
+.nav-container {
+  display: flex;
+}
+
+.nav-top {
+  display: flex;
+  justify-content: space-between;
+  width: inherit;
 }
 
 /*Grid system*/
@@ -219,3 +247,22 @@ body {
   padding: 100px 0;
   color: #fff;
 }
+
+.logo {
+  height: 114px;
+  width: 132px;
+  border-radius: 12px;
+}
+
+.contact-logo {
+  justify-content: center;
+}
+
+.contact-logo li {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  font-size: 16px;
+} 
