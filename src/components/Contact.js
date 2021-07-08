@@ -4,7 +4,7 @@ import {RiInstagramFill, RiLinkedinBoxFill, RiGithubFill, RiPinterestFill} from 
 
 function Contact() {
     const [header] = React.useState( {
-        heading: "Contact ",
+        heading: "Contact",
         about: " ,mncjlasdknjclsdkvmjldf  vndflvknldf  mnvdflkvmld.f nlkmdfvld "
     }) 
 
@@ -28,6 +28,24 @@ function Contact() {
                         </ul> 
                     </div>
             </div>  
+            <div className="container">
+                <div className="contact-name">
+                    <input className="name" type="text" placeholder="Your Name"/>
+                    <input className="name" type="text" placeholder="Your Email"/>
+                </div>
+
+                <div className="contact-subject">
+                <textarea className="name subject" type="text" placeholder="Your Subject"/>
+                </div>
+                
+                <div className="contact-message">
+                <textarea className="name subject" type="text" placeholder="Your Message"/>
+                </div>
+                
+
+                <input className="submitButton" type="submit" value="Send Message"/> 
+         
+            </div>
         </div>
     )
 }
